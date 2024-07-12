@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Remixicon CSS (optional for icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Medical companion Service</title>
+  </head>
+  <body>
+    <header>
+    <nav class="section__container nav__container" id="main-nav">
+  <div class="nav__logo" id="logo">FaithFul<span> Care Solutions <br> 
+    <div style="font-size: 14px;" id="tagline">Care Solutions You Can Trust</div>
+  </span></div>
+  <button class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul class="nav__links" style="color: #fb923c" id="nav-links">
+    <li class="link" id="link-home"><a href="#">Home</a></li>
+    <li class="link" id="link-about"><a href="#">About Us</a></li>
+    <li class="link" id="link-services"><a href="#">Services</a></li>
+    <li class="link" id="link-signup"><a href="#" onclick="toggleModal('signupModal')">Signup</a></li>
+    <li class="link" id="link-login"><a href="#" onclick="toggleModal('loginModal')">Login</a></li>
+  </ul>
+  <button class="btn" id="contact-btn">Contact Us</button>
+</nav>
+
+
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h2>Providing an Exceptional Medical Service</h2>
+          <p>
+            Delivering unparalleled care through tailored medical companion services, including exclusive access to cosmetic procedure insights and personalized consultation options.
+          </p>
+          <button class="btn">See Services</button>
+        </div>
+      </div>
+    </header>
+ <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="First Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Last Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" placeholder="Phone" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <section class="section__container service__container">
+      <div class="service__header">
+        <div class="service__header__content">
+          <h2 class="section__header">Medical Companion Services</h2>
+          <p>
+            We are dedicated to delivering exceptional care tailored to your individual needs.
+          </p>
+        </div>
+        <button class="service__btn">Make Enquiry
+</button>
+      </div>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-microscope-line"></i></span>
+          <h4>Personalized Consultations</h4>
+          <p>
+             Tailor consultation fees and receive expert advice on medical options.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-mental-health-line"></i></span>
+          <h4>Exclusive Cosmetic Insights</h4>
+          <p>
+            Gain premium access to detailed cosmetic procedure definitions and insights.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-hospital-line"></i></span>
+          <h4>All-Inclusive Care Packages</h4>
+          <p>
+            Enjoy seamless pre and post-operative care including travel, prescription, and more.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="section__container about__container">
+      <div class="about__content">
+        <h2 class="section__header">About Us</h2>
+        <p>
+          Welcome to our dedicated Medical Companion Service, where we specialize in providing personalized care that goes beyond traditional medical assistance. Our mission is to ensure your comfort and well-being throughout your entire journey with us. We are committed to delivering exceptional service that meets your unique needs and exceeds your expectations.
+        </p>
+        <p>
+         Discover exclusive access to our comprehensive Cosmetic Procedure Vault, offering detailed definitions and insights into a variety of cosmetic treatments. Whether you're researching options or seeking specific information, our vault provides valuable resources to support your decision-making process and enhance your understanding.
+        </p>
+        <p>
+          We pride ourselves on offering customized consultation services tailored to your individual requirements. From flexible consultation fees to expert advice on medical options, our goal is to empower you with the knowledge and guidance needed to make informed decisions about your health and care.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="assets/ab.jpg" alt="about" />
+      </div>
+    </section>
+
+    <section class="section__container why__container">
+      <div class="why__image">
+        <img src="assets/ch.jpg" alt="why choose us" />
+      </div>
+      <div class="why__content">
+        <h2 class="section__header">Why Choose Us</h2>
+       
+        <div class="why__grid">
+          <span><i class="ri-hand-heart-line"></i></span>
+          <div>
+            <h4>Excellence in Service</h4>
+            <p>
+              We are dedicated to delivering the highest standard of care and service excellence in every interaction.</p>
+          </div>
+          <span><i class="ri-truck-line"></i></span>
+          <div>
+            <h4>Your Trusted Companion</h4>
+            <p>
+              As your dedicated medical companion, we prioritize building a trusting relationship with you. We are committed to being a reliable partner throughout your medical journey, offering guidance and support every step of the way.
+            </p>
+          </div>
+          <span><i class="ri-hospital-line"></i></span>
+          <div>
+            <h4>Holistic Care Approach</h4>
+            <p>
+              Our services are designed to address not only your medical needs but also your overall comfort and peace of mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Faithful<span> Care Solutions</span></h3>
+          <p>
+            We are honored to be a part of your healthcare journey and committed
+            to delivering compassionate, personalized, and top-notch care every
+            step of the way.
+          </p>
+          <p>
+            Trust us with your health, and let us work together to achieve the
+            best possible outcomes for you and your loved ones.
+          </p>
+        </div>
+     
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p>Personalized Consultations</p>
+          <p>Exclusive Cosmetic Insights</p>
+          <p>All-Inclusive Care Packages</p>
+          
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="ri-map-pin-2-fill"></i> +254, Kenya
+          </p>
+          <p><i class="ri-mail-fill"></i> info@faithfulcaresolutions.co.ke</p>
+          <p><i class="ri-phone-fill"></i> (+254........) </p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <p>Copyright © 2024. All rights reserved.<br> <div style="font-size: 22px;">Faithful Care Solutions</div> Care Solutions You Can Trust<br></p>
+          <div class="footer__socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-heart-fill"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav__links');
+        navLinks.classList.toggle('active');
+      }
+    </script>
+
+ <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+
+function toggleMenu() {
+  const navLinks = document.getElementById('nav-links');
+  if (navLinks.style.display === 'flex') {
+    navLinks.style.display = 'none';
+  } else {
+    navLinks.style.display = 'flex';
+  }
+}
+
+
+    function toggleModal(modalId) {
+      var modal = new bootstrap.Modal(document.getElementById(modalId), {
+        keyboard: false
+      });
+      modal.toggle();
+    }
+  </script>
+
+  </body>
+</html>
